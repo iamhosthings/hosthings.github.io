@@ -1,11 +1,18 @@
-message {
+.message {
   font-family: "Archivo Black", sans-serif;
   background: #f4d03f;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 50vh;
   justify-content: center;
   align-items: center;
+}
+.logo {
+  /* border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px; */
+  width: 400px;
+  height: 400px;
 }
 
 .words {
@@ -17,7 +24,7 @@ message {
 .words span {
   font-size: 6rem;
   display: inline-block;
-  animation: move 10s ease-in-out infinite;
+  animation: move 11s ease-in-out infinite;
 }
 
 @keyframes move {
@@ -58,6 +65,9 @@ message {
 
 @media screen and (max-width: 500px) {
   .words span {
-  font-size: 3rem;
+  font-size: 4rem;
+}
+.message {
+  height: 20vh;
 }
 }
