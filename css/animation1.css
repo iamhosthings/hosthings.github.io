@@ -25,7 +25,8 @@
 	height: 70vh;
 	justify-content: center;
 	text-align: center;
-  background: #485564;
+  align-items: center;
+  background: #8295aa;
 	color: #FAFAFA;
 }
 
@@ -33,20 +34,22 @@
   display: flex; 
   flex-direction: row;
   justify-content:space-around;
+  width: 100%;
 }
 
 .bullejob{
-  height: 200px;
-    width: 200px;
-    background-image: url('../img/worktogether2.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 50%;
-    border-color: coral;
+  height: 180px;
+  width: 180px;
+  background-image: url('../img/worktogether2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: coral;
 }
 
 .bulledev{
@@ -60,7 +63,21 @@
   justify-content: center;
   cursor: pointer;
   border-radius: 50%;
+  border-style: solid;
   border-color: coral;
+}
+
+.logohosthings{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 250px;
+  width: 250px;
+  background-image: url('../img/hosthings.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @keyframes move {
