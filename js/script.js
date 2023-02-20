@@ -2,18 +2,16 @@
 (function () {
 
   var s = document.getElementById('start');
-  s.style.backgroundImage = "url('img/chatmain3.jpg')"
 
-
-  setTimeout(function changeImg() {
-
-    if (s.style.backgroundImage === 'url("img/chatmain3.jpg")') {
-      s.style.backgroundImage = "url('img/chatmain2.jpg')"
-    } else {
-      s.style.backgroundImage = 'url("img/chatmain3.jpg")';
-    }
-
-  }, 3000);
+  // setTimeout(function changeImg() {
+  //     if (s.style.backgroundImage === 'url("img/chatmain3.jpg")') {
+  //       s.style.backgroundImage = "url('img/chatmain2.jpg')";
+  //       s.style.justifyContent = 'center';
+  //     } else {
+  //       s.style.backgroundImage = 'url("img/chatmain3.jpg")';
+  //     }
+  //     s.style.backgroundImage = 'url("img/logoHosthings3.png")';
+  // }, 3000);
 
 
 })();

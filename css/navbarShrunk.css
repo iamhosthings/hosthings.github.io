@@ -1,28 +1,10 @@
-.bg-img{
-    /* The image used */
-    background-image: url('../img/chatmain3.jpg');
   
-    min-height: 700px;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-    /* Needed to position the navbar */
-    position: relative;
-  }
-  
-  /* Position the navbar container inside the image */
-  .container {
-    position: absolute;
-    margin: 20px;
-    width: auto;
-  }
-  
+   .pageMain{
+    display: flex;
+    flex-direction: column;
+}
   /* The navbar */
   .topnav {
-    overflow: hidden;
     background-color: #333;
     position: fixed;
     align-items: center;
@@ -30,7 +12,15 @@
     flex-direction: row;
     border-radius: 10px 100px / 120px;
   }
-  
+  .logohosthings{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    background-image: url('../img/logoHosthings3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   /* Navbar links */
   .topnav a {
     float: left;
@@ -45,14 +35,16 @@
     background-color: #ddd;
     color: black;
   }
- .pageMain{
-     display: flex;
-     flex-direction: column;
-     
- }
+  .logohosthingsIntro{
+    background-image: url('../img/chatmain2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1500px;
+    height: 600px;
+  }
  .expertises{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     
 }
 .partleft{
@@ -61,6 +53,7 @@
 }
 .partright{
     display: flex;
+    flex-direction: column;
 }
 
  .navbarlogo{
@@ -72,15 +65,8 @@
      
  }
 
- .logohosthings{
-    display: flex;
-    height: 80px;
-    width: 80px;
-    background-image: url('../img/logoHosthings3.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+
+
 .main{
     display: flex;
     background-image: url('../img/chatmain1.jpg');
@@ -207,29 +193,12 @@
 }
 
 @media (0px <= width <= 700px) {
-    .bg-img{
-        min-height: 480px;
-        display: flex;
-        justify-content: center;
-        background-position: center;
+
+    .logohosthingsIntro{
+        background-image: url('../img/chatmain7.jpg');
         background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url('../img/chatmain6.jpg');
+        background-position: center;
+        width: 100%;
+        height: 500px;
       }
-      .logohosthings{
-          display: none;
-      }
-    .pageMain {
-      height: 20vh;
-    }
-  
-    .bullelogo{
-      height: 60px;
-      width: 60px;
-    }
-  
-    .pageMain {
-      height: 80vh;
-  
-    }
   }
