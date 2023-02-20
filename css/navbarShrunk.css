@@ -36,10 +36,11 @@
     color: black;
   }
   .logohosthingsIntro{
-    background-image: url('../img/chatmain2.jpg');
+      background-color:rgb(161, 170, 172);
+    background-image: url('../img/intro.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    width: 1500px;
+   max-width: 100%;
     height: 600px;
   }
  .expertises{
@@ -195,10 +196,11 @@
 @media (0px <= width <= 700px) {
 
     .logohosthingsIntro{
-        background-image: url('../img/chatmain7.jpg');
+        background-color: white;
+        background-image: url('../img/intro2.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        width: 100%;
+       max-width: 100%;
         height: 500px;
       }
   }
