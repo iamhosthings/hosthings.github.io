@@ -1,6 +1,6 @@
 .bg-img{
     /* The image used */
-    /* background-image: url('../img/chatmain2.jpg'); */
+    background-image: url('../img/chatmain3.jpg');
   
     min-height: 700px;
   
@@ -208,14 +208,16 @@
 
 @media (0px <= width <= 700px) {
     .bg-img{
-        /* The image used */
-        /* background-image: url('../img/chatmain2.jpg'); */
-      
-        min-height: 180px;
-        background-image: url('../img/chatmain5.jpg');
+        min-height: 480px;
+        display: flex;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('../img/chatmain6.jpg');
       }
-      .img{
-        background-image: url('../img/chatmain5.jpg');
+      .logohosthings{
+          display: none;
       }
     .pageMain {
       height: 20vh;
@@ -231,38 +233,3 @@
   
     }
   }
-
-  @media screen and (max-width: 600px){
-    .bg-img{
-        /* The image used */
-        /* background-image: url('../img/chatmain2.jpg'); */
-      
-        min-height: 480px;
-      }
-      .img{
-        background-image: url('../img/chatmain5.jpg');
-      }
-	html {
-		font-size: 12px;
-	}
-	  main { 
-		  height: 120vh;
-	  }
-	  .contact {
-		height: 250vh;
-	  }
-	  .bullezone{
-		  height: 100vh;
-	  }
-	  .bullejob {
-		height: 100px;
-		width: 100px;
-	  }
-	  
-	  .bulledev {
-		height: 80px;
-		width: 80px;
-	  }
-}
-
-
