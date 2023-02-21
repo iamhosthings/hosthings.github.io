@@ -2,16 +2,43 @@
 (function () {
 
   var s = document.getElementById('start');
+  var timer = 0;
+  if (window.innerWidth > 800) {
+    console.log('flag')
+    s.style.backgroundImage = "url('img/intro.jpg')";
+    var myInterval = setInterval(function changeImg() {
+      if (s.style.backgroundImage === 'url("img/intro.jpg")') {
+        s.style.backgroundImage = "url('img/intro2.jpg')";
+      } else {
+        s.style.backgroundImage = 'url("img/intro.jpg")';
+      }
+      timer++;
+      if (timer > 7) {
+        if (s.style.backgroundImage === 'url("img/intro2.jpg")') {
+          s.style.backgroundImage = "url('img/intro.jpg')";
+        }
+        clearInterval(myInterval);
 
-  // setTimeout(function changeImg() {
-  //     if (s.style.backgroundImage === 'url("img/chatmain3.jpg")') {
-  //       s.style.backgroundImage = "url('img/chatmain2.jpg')";
-  //       s.style.justifyContent = 'center';
-  //     } else {
-  //       s.style.backgroundImage = 'url("img/chatmain3.jpg")';
-  //     }
-  //     s.style.backgroundImage = 'url("img/logoHosthings3.png")';
-  // }, 3000);
+      }
+    }, 200);
+  }else{
+    s.style.backgroundImage = "url('img/intro3.jpg')";
+    var myInterval = setInterval(function changeImg() {
+      if (s.style.backgroundImage === 'url("img/intro3.jpg")') {
+        s.style.backgroundImage = "url('img/intro4.jpg')";
+      } else {
+        s.style.backgroundImage = 'url("img/intro3.jpg")';
+      }
+      timer++;
+      if (timer > 7) {
+        if (s.style.backgroundImage === 'url("img/intro4.jpg")') {
+          s.style.backgroundImage = "url('img/intro3.jpg')";
+        }
+        clearInterval(myInterval);
+
+      }
+    }, 200);
+  }
 
 
 })();

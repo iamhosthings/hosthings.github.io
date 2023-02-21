@@ -115,14 +115,14 @@
 	font-size: 3em;
 }
 
-@media (0px <= width <= 700px) {
 
-    .logohosthingsIntro{
-        background-color: white;
-        background-image: url('../img/intro4.jpg');
+@media screen and (min-width: 381px) {
+        .logohosthingsIntro{
+        background-image: url('../img/intro.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        height: 500px;
+       width: 380px;
+        height: 600px;
       }
-  }
+}
 
