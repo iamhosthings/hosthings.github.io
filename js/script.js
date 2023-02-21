@@ -4,7 +4,6 @@
   var s = document.getElementById('start');
   var timer = 0;
   if (window.innerWidth > 800) {
-    console.log('flag')
     s.style.backgroundImage = "url('img/intro.jpg')";
     var myInterval = setInterval(function changeImg() {
       if (s.style.backgroundImage === 'url("img/intro.jpg")') {
@@ -13,7 +12,7 @@
         s.style.backgroundImage = 'url("img/intro.jpg")';
       }
       timer++;
-      if (timer > 7) {
+      if (timer > 10) {
         if (s.style.backgroundImage === 'url("img/intro2.jpg")') {
           s.style.backgroundImage = "url('img/intro.jpg')";
         }
@@ -30,7 +29,7 @@
         s.style.backgroundImage = 'url("img/intro3.jpg")';
       }
       timer++;
-      if (timer > 7) {
+      if (timer > 10) {
         if (s.style.backgroundImage === 'url("img/intro4.jpg")') {
           s.style.backgroundImage = "url('img/intro3.jpg')";
         }
