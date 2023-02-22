@@ -42,6 +42,7 @@
     background-size: cover;
     height: 500px;
     border-radius: 15px;
+    margin-top: 80px;
   }
   .contentdata{
       display: flex;
@@ -233,6 +234,9 @@
 
 
 @media screen and (max-width: 381px) {
+    .logohosthingsIntro{
+        margin-top: 0px;
+      }
     .logohosthings{
         display: flex;
         height: 20px;
